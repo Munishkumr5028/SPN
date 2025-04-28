@@ -59,7 +59,7 @@ function Navbar() {
       </div>
 
       <div className="main-navbar">
-        <div className="logo">Panjab University</div>
+        <div className="logo">PU Chandigarh</div>
         <nav className={`nav-links ${showMenu ? "active" : ""}`}>
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
