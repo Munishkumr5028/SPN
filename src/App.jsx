@@ -8,6 +8,7 @@ import Dashboard from "./Dashboard/Dashboard";
 import Courses from "./components/Courses/Courses";
 import Gallery from "./components/Gallery/Gallery";
 import News from "./components/News/News";
+import NewsDetail from "./components/News/NewsDetials";
 import Students from "./components/Students/Students";
 import Alumni from "./components/Alumni/Alumni";
 import Contact from "./components/Contact/Contact";
@@ -24,6 +25,7 @@ function App() {
           <Route path="/courses" element={<Courses />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/news" element={<News />} />
+          <Route path="/news/:id" element={<NewsDetail />} />
           <Route path="/students" element={<Students />} />
           <Route path="/alumni" element={<Alumni />} />
           <Route path="/contact" element={<Contact />} />
