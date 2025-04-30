@@ -71,7 +71,9 @@ function Navbar() {
           <Link to="/contact">Contact</Link>
         </nav>
         <div className="nav-actions">
-          <button className="admission-btn">Admission</button>
+          <Link to="/admission">
+            <button className="admission-btn">Admission</button>
+          </Link>
           <FaBars
             className="hamburger"
             onClick={() => setShowMenu(!showMenu)}

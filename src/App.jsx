@@ -11,6 +11,7 @@ import News from "./components/News/News";
 import Students from "./components/Students/Students";
 import Alumni from "./components/Alumni/Alumni";
 import Contact from "./components/Contact/Contact";
+import Admission from "./components/Admission/Admission";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/students" element={<Students />} />
           <Route path="/alumni" element={<Alumni />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/admission" element={<Admission />} />
         </Route>
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
