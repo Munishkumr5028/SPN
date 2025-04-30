@@ -87,7 +87,7 @@ function Admission() {
 
         <div className="form-group">
           <div className="mobile-wrapper">
-            <select className="country-code" disabled>
+            <select id="countryCode" className="country-code" disabled>
               <option value="+91" selected>+91</option>
             </select>
             <input
