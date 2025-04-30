@@ -33,3 +33,20 @@
 p.news-full-content {
   line-height: 2;
 }
+.back-to-news {
+  display: inline-block;
+  background: #27ae60;
+  color: white;
+  padding: 8px 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from the link */
+  transition: background 0.3s ease;
+}
+
+.back-to-news:hover {
+  background: #2ecc71;
+}

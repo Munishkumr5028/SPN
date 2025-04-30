@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./NewsDetials.css";
 
 const newsList = [
@@ -119,6 +119,9 @@ function NewsDetail() {
       <h2 className="news-title">{news.title}</h2>
       <div className="news-date">{news.date}</div>
       <p className="news-full-content">{news.fullContent}</p>
+      <Link to="/news" className="back-to-news">
+        Back to News
+      </Link>
     </div>
   );
 }
