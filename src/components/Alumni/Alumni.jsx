@@ -1,162 +1,173 @@
-import React from 'react'
-import './Alumni.css'
+import React from "react";
+import "./Alumni.css";
 
 const toppers = [
   {
     id: 1,
-    name: 'Aarav Sharma',
-    department: 'Computer Science',
-    rank: 1,
-    image: 'https://randomuser.me/api/portraits/men/32.jpg'
+    name: "Aarav Sharma",
+    department: "Computer Science",
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    details: "Graduated in 2020. Currently working at Google.",
   },
   {
     id: 2,
-    name: 'Meera Nair',
-    department: 'Electronics',
-    rank: 2,
-    image: 'https://randomuser.me/api/portraits/women/44.jpg'
+    name: "Meera Nair",
+    department: "Electronics",
+    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    details: "Graduated in 2021. Working at Intel.",
   },
   {
     id: 3,
-    name: 'Rahul Mehta',
-    department: 'Mechanical',
-    rank: 3,
-    image: 'https://randomuser.me/api/portraits/men/45.jpg'
+    name: "Rahul Mehta",
+    department: "Mechanical",
+    image: "https://randomuser.me/api/portraits/men/45.jpg",
+    details: "Graduated in 2019. Mechanical Engineer at Mahindra.",
   },
   {
     id: 4,
-    name: 'Sneha Reddy',
-    department: 'Civil Engineering',
-    rank: 4,
-    image: 'https://randomuser.me/api/portraits/women/55.jpg'
+    name: "Sneha Reddy",
+    department: "Civil Engineering",
+    image: "https://randomuser.me/api/portraits/women/55.jpg",
+    details: "Graduated in 2020. Structural Designer at L&T.",
   },
   {
     id: 5,
-    name: 'Ankit Verma',
-    department: 'BCA',
-    rank: 5,
-    image: 'https://randomuser.me/api/portraits/men/25.jpg'
+    name: "Ankit Verma",
+    department: "BCA",
+    image: "https://randomuser.me/api/portraits/men/25.jpg",
+    details: "Graduated in 2021. Working as Software Developer at Infosys.",
   },
   {
     id: 6,
-    name: 'Kriti Sharma',
-    department: 'Mathematics',
-    rank: 6,
-    image: 'https://randomuser.me/api/portraits/women/30.jpg'
+    name: "Kriti Sharma",
+    department: "Mathematics",
+    image: "https://randomuser.me/api/portraits/women/30.jpg",
+    details: "Graduated in 2019. Data Analyst at TCS.",
   },
   {
     id: 7,
-    name: 'Vikram Raj',
-    department: 'Physics',
-    rank: 7,
-    image: 'https://randomuser.me/api/portraits/men/28.jpg'
+    name: "Vikram Raj",
+    department: "Physics",
+    image: "https://randomuser.me/api/portraits/men/28.jpg",
+    details: "Graduated in 2022. Research Assistant at CERN.",
   },
   {
     id: 8,
-    name: 'Sanya Kapoor',
-    department: 'Chemistry',
-    rank: 8,
-    image: 'https://randomuser.me/api/portraits/women/25.jpg'
+    name: "Sanya Kapoor",
+    department: "Chemistry",
+    image: "https://randomuser.me/api/portraits/women/25.jpg",
+    details: "Graduated in 2020. Chemist at Dr. Reddy’s Labs.",
   },
   {
     id: 9,
-    name: 'Dev Patel',
-    department: 'History',
-    rank: 9,
-    image: 'https://randomuser.me/api/portraits/men/12.jpg'
+    name: "Dev Patel",
+    department: "History",
+    image: "https://randomuser.me/api/portraits/men/12.jpg",
+    details: "Graduated in 2021. Museum Curator at National Museum.",
   },
   {
     id: 10,
-    name: 'Neha Bansal',
-    department: 'Political Science',
-    rank: 10,
-    image: 'https://randomuser.me/api/portraits/women/60.jpg'
+    name: "Neha Bansal",
+    department: "Political Science",
+    image: "https://randomuser.me/api/portraits/women/60.jpg",
+    details: "Graduated in 2019. Policy Analyst at UNDP.",
   },
   {
     id: 11,
-    name: 'Rohan Iyer',
-    department: 'Economics',
-    rank: 11,
-    image: 'https://randomuser.me/api/portraits/men/15.jpg'
+    name: "Rohan Iyer",
+    department: "Economics",
+    image: "https://randomuser.me/api/portraits/men/15.jpg",
+    details: "Graduated in 2020. Economist at World Bank.",
   },
   {
     id: 12,
-    name: 'Tina Desai',
-    department: 'English',
-    rank: 12,
-    image: 'https://randomuser.me/api/portraits/women/19.jpg'
+    name: "Tina Desai",
+    department: "English",
+    image: "https://randomuser.me/api/portraits/women/19.jpg",
+    details: "Graduated in 2022. Content Editor at Penguin Publishing.",
   },
   {
     id: 13,
-    name: 'Arjun Khanna',
-    department: 'BBA',
-    rank: 13,
-    image: 'https://randomuser.me/api/portraits/men/23.jpg'
+    name: "Arjun Khanna",
+    department: "BBA",
+    image: "https://randomuser.me/api/portraits/men/23.jpg",
+    details: "Graduated in 2018. Business Analyst at Deloitte.",
   },
   {
     id: 14,
-    name: 'Priya Singh',
-    department: 'MBA',
-    rank: 14,
-    image: 'https://randomuser.me/api/portraits/women/22.jpg'
+    name: "Priya Singh",
+    department: "MBA",
+    image: "https://randomuser.me/api/portraits/women/22.jpg",
+    details: "Graduated in 2019. Product Manager at Amazon.",
   },
   {
     id: 15,
-    name: 'Karan Malhotra',
-    department: 'Zoology',
-    rank: 15,
-    image: 'https://randomuser.me/api/portraits/men/39.jpg'
+    name: "Karan Malhotra",
+    department: "Zoology",
+    image: "https://randomuser.me/api/portraits/men/39.jpg",
+    details: "Graduated in 2020. Wildlife Biologist at WWF.",
   },
   {
     id: 16,
-    name: 'Divya Gupta',
-    department: 'Botany',
-    rank: 16,
-    image: 'https://randomuser.me/api/portraits/women/39.jpg'
+    name: "Divya Gupta",
+    department: "Botany",
+    image: "https://randomuser.me/api/portraits/women/39.jpg",
+    details: "Graduated in 2021. Researcher at Botanical Survey of India.",
   },
   {
     id: 17,
-    name: 'Manav Joshi',
-    department: 'Statistics',
-    rank: 17,
-    image: 'https://randomuser.me/api/portraits/men/9.jpg'
+    name: "Manav Joshi",
+    department: "Statistics",
+    image: "https://randomuser.me/api/portraits/men/9.jpg",
+    details: "Graduated in 2022. Data Scientist at IBM.",
   },
   {
     id: 18,
-    name: 'Ritika Saini',
-    department: 'Geography',
-    rank: 18,
-    image: 'https://randomuser.me/api/portraits/women/7.jpg'
+    name: "Ritika Saini",
+    department: "Geography",
+    image: "https://randomuser.me/api/portraits/women/7.jpg",
+    details: "Graduated in 2020. GIS Analyst at ESRI.",
   },
   {
     id: 19,
-    name: 'Sahil Dubey',
-    department: 'Philosophy',
-    rank: 19,
-    image: 'https://randomuser.me/api/portraits/men/60.jpg'
+    name: "Sahil Dubey",
+    department: "Philosophy",
+    image: "https://randomuser.me/api/portraits/men/60.jpg",
+    details: "Graduated in 2019. Ethics Consultant at ThoughtWorks.",
   },
   {
     id: 20,
-    name: 'Nidhi Rawat',
-    department: 'Sociology',
-    rank: 20,
-    image: 'https://randomuser.me/api/portraits/women/65.jpg'
-  }
+    name: "Nidhi Rawat",
+    department: "Sociology",
+    image: "https://randomuser.me/api/portraits/women/65.jpg",
+    details: "Graduated in 2021. Social Researcher at NITI Aayog.",
+  },
 ];
 
 function Alumni() {
   return (
     <div className="students-section">
-      <h2 className="students-heading">Department Toppers</h2>
+      <h2 className="students-heading">Our Alumni</h2>
       <div className="students-grid">
         {toppers.map((student) => (
-          <div key={student.id} className="student-card">
-            <div className="student-img-wrapper">
-              <img src={student.image} alt={student.name} className="student-img" />
+          <div key={student.id} className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <div className="student-img-wrapper">
+                  <img
+                    src={student.image}
+                    alt={student.name}
+                    className="student-img"
+                  />
+                </div>
+                <h3 className="student-name">{student.name}</h3>
+                <p className="student-department">{student.department}</p>
+              </div>
+              <div className="flip-card-back">
+                <h3>{student.name}</h3>
+                <p>{student.details}</p>
+              </div>
             </div>
-            <h3 className="student-name">{student.name}</h3>
-            <p className="student-department">{student.department}</p>
-            {/* <span className="student-rank">Rank: {student.rank}</span> */}
           </div>
         ))}
       </div>
@@ -164,4 +175,4 @@ function Alumni() {
   );
 }
 
-export default Alumni
+export default Alumni;
