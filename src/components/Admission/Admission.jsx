@@ -47,7 +47,12 @@ function Admission() {
     if (validateForm()) {
       console.log('Form Submitted:', formData);
       alert('Form submitted successfully!');
-      // Reset form or send to server here
+      setFormData({
+        name: '',
+        email: '',
+        mobile: '',
+        subject: '',
+      });
     }
   };
 
