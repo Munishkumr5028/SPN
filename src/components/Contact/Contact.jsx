@@ -93,7 +93,7 @@ function Contact() {
         <h3>For General/ Admission Related Enquiry:</h3>
         <p><strong>Phone:</strong> +91-1824-521360 (General Enquiry)</p>
         <p><strong>Phone:</strong> +91-1824-521350 (Admission Enquiry)</p>
-        <p><strong>Toll Free:</strong> 1800 3001 1800</p>
+        <p><strong>Toll Free:</strong> 1800 3001 1600</p>
       </div>
     </div>
   </section>
