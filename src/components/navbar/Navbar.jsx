@@ -9,14 +9,25 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
   const [showMini, setShowMini] = useState(true);
   const [lastScrollTop, setLastScrollTop] = useState(0);
   const [showMenu, setShowMenu] = useState(false);
 
+  const location = useLocation();
+  const pathname = location.pathname;
+
+  // Define paths where mini-navbar should be hidden
+  const hideMiniNavbar = pathname.startsWith("/courses/") || pathname.startsWith("/news/");
+
   useEffect(() => {
+    if (hideMiniNavbar) {
+      setShowMini(false);
+      return;
+    }
+
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       if (scrollTop > lastScrollTop && scrollTop > 100) {
@@ -29,34 +40,36 @@ function Navbar() {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollTop]);
+  }, [lastScrollTop, hideMiniNavbar]);
 
   return (
     <>
-      <div className={`mini-navbar ${showMini ? "visible" : "hidden"}`}>
-        <div className="mini-left">
-          <span>
-            <FaEnvelope /> example@gmail.com
-          </span>
-          <span>
-            <FaMapMarkerAlt /> Punjab, India
-          </span>
-          <span>
-            <FaPhoneAlt /> +91 98765 43210
-          </span>
+      {!hideMiniNavbar && (
+        <div className={`mini-navbar ${showMini ? "visible" : "hidden"}`}>
+          <div className="mini-left">
+            <span>
+              <FaEnvelope /> example@gmail.com
+            </span>
+            <span>
+              <FaMapMarkerAlt /> Punjab, India
+            </span>
+            <span>
+              <FaPhoneAlt /> +91 98765 43210
+            </span>
+          </div>
+          <div className="mini-right">
+            <Link to="#">
+              <FaFacebookF />
+            </Link>
+            <Link to="#">
+              <FaInstagram />
+            </Link>
+            <Link to="#">
+              <FaTwitter />
+            </Link>
+          </div>
         </div>
-        <div className="mini-right">
-          <Link to="#">
-            <FaFacebookF />
-          </Link>
-          <Link to="#">
-            <FaInstagram />
-          </Link>
-          <Link to="#">
-            <FaTwitter />
-          </Link>
-        </div>
-      </div>
+      )}
 
       <div className="main-navbar">
         <div className="logo">Panjab University</div>

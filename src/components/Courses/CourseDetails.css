@@ -21,7 +21,7 @@
 .left-course-info h2 {
   font-size: 1.4rem;
   margin-bottom: 10px;
-  color: #333;
+  color: #1a1919;
   border-bottom: 1px solid rgb(199, 199, 199);
   padding-bottom: 15px;
 }
@@ -29,7 +29,7 @@
 .left-course-info h3 {
   font-size: 1.2rem;
   margin-bottom: 8px;
-  color: #444;
+  color: #252525;
 }
 
 .left-course-info p {
