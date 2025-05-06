@@ -13,6 +13,7 @@ import Students from "./components/Students/Students";
 import Alumni from "./components/Alumni/Alumni";
 import Contact from "./components/Contact/Contact";
 import Admission from "./components/Admission/Admission";
+import CourseDetails from "./components/Courses/CourseDetails";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<About />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/courses/:id" element={<CourseDetails />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/news" element={<News />} />
           <Route path="/news/:id" element={<NewsDetail />} />

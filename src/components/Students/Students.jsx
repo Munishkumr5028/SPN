@@ -147,7 +147,7 @@ const toppers = [
 function Students() {
   return (
     <div className="students-section">
-      <h2 className="students-heading">Department Toppers</h2>
+      <h2 className="students-heading">University Toppers</h2>
       <div className="students-grid">
         {toppers.map((student) => (
           <div key={student.id} className="student-card">
