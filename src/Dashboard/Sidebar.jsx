@@ -45,11 +45,8 @@ function Sidebar() {
         </li>
         {openSection === "courses" && (
           <ul className="submenu">
-            <li>Course List</li>
             <li>Add Course</li>
-            <li>Update Course</li>
             <li>Delete Course</li>
-            <li>Details Course</li>
           </ul>
         )}
 
@@ -68,12 +65,10 @@ function Sidebar() {
           <FaNewspaper className="sidebar-icon" />
           News <FaChevronDown className="chevron" />
         </li>
-        {openSection === "faculty" && (
+        {openSection === "news" && (
           <ul className="submenu">
             <li>Add News</li>
-            <li>Update News</li>
             <li>Delete News</li>
-            <li>Details News</li>
           </ul>
         )}
 
