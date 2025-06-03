@@ -82,6 +82,16 @@ function Sidebar() {
             <li>Delete Alumini</li>
           </ul>
         )}
+        <li onClick={() => toggleSection("Gallery")}>
+          <FaCalendarAlt className="sidebar-icon" />
+          Gallery <FaChevronDown className="chevron" />
+        </li>
+        {openSection === "Gallery" && (
+          <ul className="submenu">
+            <li>Add Photos</li>
+            <li>Delete Photos</li>
+          </ul>
+        )}
       </ul>
     </div>
   );
