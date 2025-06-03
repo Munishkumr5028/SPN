@@ -1,6 +1,7 @@
 import React from 'react';
 import Sidebar from './Sidebar';
 import Navbar from './Navbar';
+import Footer from './Footer';
 import './Dashboard.css';
 import { FaEnvelope, FaNewspaper, FaCalendarAlt, FaBullhorn } from 'react-icons/fa';
 
@@ -12,7 +13,7 @@ function Dashboard() {
         <Navbar />
         <div className="dashboard-content">
           <h1>Welcome College</h1>
-          <p>This is your dashboard of College .</p>
+          <p>This is your dashboard of College.</p>
 
           <div className="card-container">
             <div className="dashboard-card email">
@@ -37,6 +38,7 @@ function Dashboard() {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );

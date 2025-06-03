@@ -35,8 +35,6 @@ function Sidebar() {
         {openSection === "students" && (
           <ul className="submenu">
             <li>All Students</li>
-            <li>Attendance</li>
-            <li>Grades</li>
           </ul>
         )}
 
