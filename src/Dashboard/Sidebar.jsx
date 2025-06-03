@@ -34,7 +34,8 @@ function Sidebar() {
         </li>
         {openSection === "students" && (
           <ul className="submenu">
-            <li>All Students</li>
+            <li>Add Students</li>
+            <li>Delete Students</li>
           </ul>
         )}
 
@@ -46,6 +47,9 @@ function Sidebar() {
           <ul className="submenu">
             <li>Course List</li>
             <li>Add Course</li>
+            <li>Update Course</li>
+            <li>Delete Course</li>
+            <li>Details Course</li>
           </ul>
         )}
 
@@ -60,15 +64,29 @@ function Sidebar() {
           </ul>
         )}
 
-        <li>
+        <li onClick={() => toggleSection("news")}>
           <FaNewspaper className="sidebar-icon" />
-          News
+          News <FaChevronDown className="chevron" />
         </li>
+        {openSection === "faculty" && (
+          <ul className="submenu">
+            <li>Add News</li>
+            <li>Update News</li>
+            <li>Delete News</li>
+            <li>Details News</li>
+          </ul>
+        )}
 
-        <li>
+        <li onClick={() => toggleSection("Alumini")}>
           <FaCalendarAlt className="sidebar-icon" />
-          Events
+          Alumini <FaChevronDown className="chevron" />
         </li>
+        {openSection === "Alumini" && (
+          <ul className="submenu">
+            <li>Add Alumini</li>
+            <li>Delete Alumini</li>
+          </ul>
+        )}
       </ul>
     </div>
   );
