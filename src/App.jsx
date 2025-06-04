@@ -14,6 +14,8 @@ import Alumni from "./components/Alumni/Alumni";
 import Contact from "./components/Contact/Contact";
 import Admission from "./components/Admission/Admission";
 import CourseDetails from "./components/Courses/CourseDetails";
+import AddGallery from "./Dashboard/gallery/AddGalleryImage";
+import AddCourse from "./Dashboard/courses/AddCourse";
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
           <Route path="/admission" element={<Admission />} />
         </Route>
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/AddCourse" element={<AddCourse />} />
+        <Route path="/addgallery" element={<AddGallery />} />
       </Routes>
     </BrowserRouter>
   );

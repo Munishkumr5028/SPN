@@ -1,0 +1,142 @@
+/* AddGallery.css */
+
+.event-table-container {
+  width: 100%;
+  max-width: 2200px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title-left {
+  font-size: 40px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.event-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.event-table th,
+.event-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.event-table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.event-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.no-events {
+  padding: 20px;
+  text-align: center;
+  color: #777;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  margin: 0 4px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn.add {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn.add:hover {
+  background-color: #218838;
+}
+
+.btn.delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn.delete:hover {
+  background-color: #bb2d3b;
+}
+
+.btn.save {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn.save:hover {
+  background-color: #0056b3;
+}
+
+.btn.cancel {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn.cancel:hover {
+  background-color: #5a6268;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.modal input[type='text'],
+.modal input[type='date'],
+.modal input[type='file'] {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
