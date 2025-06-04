@@ -46,7 +46,7 @@ function Sidebar() {
         {openSection === "courses" && (
           <ul className="submenu">
             <li>Add Course</li>
-            <li>Delete Course</li>
+            <li>Details Course</li>
           </ul>
         )}
 
@@ -82,16 +82,10 @@ function Sidebar() {
             <li>Delete Alumini</li>
           </ul>
         )}
-        <li onClick={() => toggleSection("Gallery")}>
-          <FaCalendarAlt className="sidebar-icon" />
-          Gallery <FaChevronDown className="chevron" />
+       <li>
+          <FaTachometerAlt className="sidebar-icon" />
+          Gallery
         </li>
-        {openSection === "Gallery" && (
-          <ul className="submenu">
-            <li>Add Photos</li>
-            <li>Delete Photos</li>
-          </ul>
-        )}
       </ul>
     </div>
   );
