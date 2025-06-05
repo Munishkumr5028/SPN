@@ -36,8 +36,8 @@ function App() {
           <Route path="/admission" element={<Admission />} />
         </Route>
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/AddCourse" element={<AddCourse />} />
         <Route path="/addgallery" element={<AddGallery />} />
+        <Route path="/addcourse" element={<AddCourse />} />
       </Routes>
     </BrowserRouter>
   );

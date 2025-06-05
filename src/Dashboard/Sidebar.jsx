@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import './Dashboard.css'
-
+import "./Dashboard.css";
 
 import {
   FaTachometerAlt,
@@ -11,6 +10,7 @@ import {
   FaCalendarAlt,
   FaChevronDown,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   const [openSection, setOpenSection] = useState("");
@@ -24,8 +24,10 @@ function Sidebar() {
       <h2>College Admin </h2>
       <ul>
         <li>
+          <Link to= "/dashboard">
           <FaTachometerAlt className="sidebar-icon" />
           Dashboard
+          </Link>
         </li>
 
         <li onClick={() => toggleSection("students")}>
@@ -45,7 +47,11 @@ function Sidebar() {
         </li>
         {openSection === "courses" && (
           <ul className="submenu">
-            <li>Add Course</li>
+            <li>
+              <Link to= "/addcourse">
+              Add Course
+              </Link>
+              </li>
             <li>Details Course</li>
           </ul>
         )}
@@ -82,9 +88,11 @@ function Sidebar() {
             <li>Delete Alumini</li>
           </ul>
         )}
-       <li>
-          <FaTachometerAlt className="sidebar-icon" />
-          Gallery
+        <li>
+          <Link to="/addgallery">
+            <FaTachometerAlt className="sidebar-icon" />
+            Gallery
+          </Link>
         </li>
       </ul>
     </div>

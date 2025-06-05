@@ -19,13 +19,12 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Lists */
-ul, ol {
+ul li {
   list-style: none;
 }
 
