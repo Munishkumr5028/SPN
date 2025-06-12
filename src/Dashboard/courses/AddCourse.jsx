@@ -3,7 +3,23 @@ import "./AddCourses.css";
 import DashboardLayout from "../DashboardLayout";
 
 const AddCourse = () => {
-  const [courses, setCourses] = useState([{ id: 1, name: "MCA", description: "This is a sample course description with exactly fifteen words.", image: null }]);
+  const CourseData = [
+    {
+      id: 1,
+      name: "MCA",
+      description:
+        "This is a sample course description with exactly fifteen words.",
+      image: null,
+    },
+    {
+      id: 2,
+      name: "MCA",
+      description:
+        "This is a sample course description with exactly fifteen words.",
+      image: null,
+    },
+  ];
+  const [courses, setCourses] = useState(CourseData);
   const [modalOpen, setModalOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -61,7 +77,7 @@ const AddCourse = () => {
   };
 
   const handleDelete = (id) => {
-    const filteredCourses = courses.filter(course => course.id !== id);
+    const filteredCourses = courses.filter((course) => course.id !== id);
     setCourses(filteredCourses);
   };
 
@@ -70,7 +86,16 @@ const AddCourse = () => {
       <div className="course-box">
         <div className="course-header">
           <h2 className="course-title">Add Course</h2>
-          <button className="course-add-btn" onClick={() => { setModalOpen(true); setIsEditing(false); setFormData({ name: "", description: "", image: null }); }}>Add</button>
+          <button
+            className="course-add-btn"
+            onClick={() => {
+              setModalOpen(true);
+              setIsEditing(false);
+              setFormData({ name: "", description: "", image: null });
+            }}
+          >
+            Add
+          </button>
         </div>
 
         <table className="course-table">
@@ -88,8 +113,18 @@ const AddCourse = () => {
                 <td>{course.name}</td>
                 <td>
                   <div className="button-action">
-                    <button className="btn-edit" onClick={() => handleEdit(course)}>Edit</button>
-                    <button className="btn-delete" onClick={() => handleDelete(course.id)}>Delete</button>
+                    <button
+                      className="btn-edit"
+                      onClick={() => handleEdit(course)}
+                    >
+                      Edit
+                    </button>
+                    <button
+                      className="btn-delete"
+                      onClick={() => handleDelete(course.id)}
+                    >
+                      Delete
+                    </button>
                   </div>
                 </td>
               </tr>
