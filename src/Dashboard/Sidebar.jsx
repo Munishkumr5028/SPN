@@ -52,7 +52,11 @@ function Sidebar() {
               Add Course
               </Link>
               </li>
-            <li>Details Course</li>
+            <li>
+              <Link to="/detailscourse">
+              Details Course
+              </Link>
+              </li>
           </ul>
         )}
 
@@ -73,8 +77,13 @@ function Sidebar() {
         </li>
         {openSection === "news" && (
           <ul className="submenu">
-            <li>Add News</li>
-            <li>Delete News</li>
+            <li>
+              <Link to= "/addnews">
+              Add News</Link>
+            </li>
+            <li><Link to="/newsdetails">
+            Details News</Link>
+            </li>
           </ul>
         )}
 

@@ -1,94 +1,95 @@
 import React, { useState } from "react";
+import "./AddCourses.css";
 import DashboardLayout from "../DashboardLayout";
-import "./AddCourse.css";
 
-function AddCourse() {
-  const [courses, setCourses] = useState([{ id: 1, name: "MCA" }]);
-  const [showModal, setShowModal] = useState(false);
+const AddCourse = () => {
+  const [courses, setCourses] = useState([{ id: 1, name: "MCA", description: "This is a sample course description with exactly fifteen words.", image: null }]);
+  const [modalOpen, setModalOpen] = useState(false);
   const [formData, setFormData] = useState({
-    title: "",
-    objectives: "",
-    duration: "",
-    fees: ["", "", "", "", "", ""],
+    name: "",
+    description: "",
+    image: null,
   });
+  const [isEditing, setIsEditing] = useState(false);
+  const [editId, setEditId] = useState(null);
 
-  const handleInputChange = (e, i) => {
-    const { name, value } = e.target;
-    if (name === "fees") {
-      const updatedFees = [...formData.fees];
-      updatedFees[i] = value;
-      setFormData({ ...formData, fees: updatedFees });
+  const handleInput = (e) => {
+    const { name, value, files } = e.target;
+    if (name === "image") {
+      setFormData({ ...formData, image: files[0] });
     } else {
       setFormData({ ...formData, [name]: value });
     }
   };
 
-  const addCourse = () => {
-    const newCourse = {
-      id: courses.length + 1,
-      name: formData.title,
-      ...formData,
-    };
-    setCourses([...courses, newCourse]);
-    setFormData({
-      title: "",
-      objectives: "",
-      duration: "",
-      fees: ["", "", "", "", "", ""],
-    });
-    setShowModal(false);
-  };
-
-  const editCourse = (index) => {
-    const currentName = courses[index].name;
-    const newName = prompt("Edit course name:", currentName);
-    if (newName) {
-      const updatedCourses = [...courses];
-      updatedCourses[index].name = newName;
-      setCourses(updatedCourses);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const wordCount = formData.description.trim().split(/\s+/).length;
+    if (wordCount < 0 || wordCount > 20) {
+      alert("Description must be between 0 to 20 words.");
+      return;
     }
+
+    if (isEditing) {
+      const updatedCourses = courses.map((course) =>
+        course.id === editId ? { ...course, ...formData } : course
+      );
+      setCourses(updatedCourses);
+      setIsEditing(false);
+      setEditId(null);
+    } else {
+      const newCourse = {
+        id: courses.length + 1,
+        ...formData,
+      };
+      setCourses([...courses, newCourse]);
+    }
+
+    setModalOpen(false);
+    setFormData({ name: "", description: "", image: null });
   };
 
-  const deleteCourse = (index) => {
-    const updatedCourses = courses.filter((_, i) => i !== index);
-    setCourses(updatedCourses);
+  const handleEdit = (course) => {
+    setFormData({
+      name: course.name,
+      description: course.description,
+      image: course.image,
+    });
+    setEditId(course.id);
+    setIsEditing(true);
+    setModalOpen(true);
+  };
+
+  const handleDelete = (id) => {
+    const filteredCourses = courses.filter(course => course.id !== id);
+    setCourses(filteredCourses);
   };
 
   return (
     <DashboardLayout>
-      <div className="add-course">
-        <div className="header">
-          <h2>Course</h2>
-          <button onClick={() => setShowModal(true)}>Add</button>
+      <div className="course-box">
+        <div className="course-header">
+          <h2 className="course-title">Add Course</h2>
+          <button className="course-add-btn" onClick={() => { setModalOpen(true); setIsEditing(false); setFormData({ name: "", description: "", image: null }); }}>Add</button>
         </div>
 
-        <table id="courseTable">
+        <table className="course-table">
           <thead>
             <tr>
               <th>Sr.No.</th>
-              <th>Course</th>
+              <th>Course Name</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody>
             {courses.map((course, index) => (
-              <tr key={index}>
+              <tr key={course.id}>
                 <td>{index + 1}</td>
                 <td>{course.name}</td>
                 <td>
-                  <div className="action-buttons">
-                    <button
-                      className="edit-btn"
-                      onClick={() => editCourse(index)}
-                    >
-                      Edit
-                    </button>
-                    <button
-                      className="delete-btn"
-                      onClick={() => deleteCourse(index)}
-                    >
-                      Delete
-                    </button>
+                  <div className="button-action">
+                    <button className="btn-edit" onClick={() => handleEdit(course)}>Edit</button>
+                    <button className="btn-delete" onClick={() => handleDelete(course.id)}>Delete</button>
                   </div>
                 </td>
               </tr>
@@ -96,61 +97,57 @@ function AddCourse() {
           </tbody>
         </table>
 
-        {/* Modal */}
-        {showModal && (
-          <div className="modal">
-            <div className="modal-content">
-              <h3>Add New Course</h3>
-              <label>
-                Title:{" "}
+        {modalOpen && (
+          <div className="modal-backdrop">
+            <div className="modal-box">
+              <h3>{isEditing ? "Edit Course" : "Add New Course"}</h3>
+              <form onSubmit={handleSubmit}>
                 <input
-                  name="title"
-                  value={formData.title}
-                  onChange={handleInputChange}
+                  type="text"
+                  name="name"
+                  required
+                  placeholder="Course Name"
+                  value={formData.name}
+                  onChange={handleInput}
                 />
-              </label>
-              <label>
-                Objectives:{" "}
                 <textarea
-                  name="objectives"
-                  value={formData.objectives}
-                  onChange={handleInputChange}
-                />
-              </label>
-              <label>
-                Programme Duration:{" "}
+                  name="description"
+                  required
+                  placeholder="Short Description (15–20 words)"
+                  value={formData.description}
+                  onChange={handleInput}
+                ></textarea>
                 <input
-                  name="duration"
-                  value={formData.duration}
-                  onChange={handleInputChange}
+                  type="file"
+                  name="image"
+                  accept="image/*"
+                  required
+                  value={formData.topic}
+                  onChange={handleInput}
                 />
-              </label>
-              <label>Fees Structure (6 Semesters):</label>
-              {formData.fees.map((fee, i) => (
-                <input
-                  key={i}
-                  name="fees"
-                  type="number"
-                  placeholder={`Semester ${i + 1}`}
-                  value={fee}
-                  onChange={(e) => handleInputChange(e, i)}
-                />
-              ))}
-              <div className="modal-actions">
-                <button onClick={addCourse}>Save</button>
-                <button
-                  className="delete-btn"
-                  onClick={() => setShowModal(false)}
-                >
-                  Cancel
-                </button>
-              </div>
+                <div className="modal-buttons">
+                  <button
+                    type="button"
+                    className="btn-cancel"
+                    onClick={() => {
+                      setModalOpen(false);
+                      setIsEditing(false);
+                      setFormData({ name: "", description: "", image: null });
+                    }}
+                  >
+                    Cancel
+                  </button>
+                  <button type="submit" className="btn-save">
+                    {isEditing ? "Update" : "Save"}
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         )}
       </div>
     </DashboardLayout>
   );
-}
+};
 
 export default AddCourse;

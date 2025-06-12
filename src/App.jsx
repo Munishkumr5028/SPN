@@ -15,7 +15,10 @@ import Contact from "./components/Contact/Contact";
 import Admission from "./components/Admission/Admission";
 import CourseDetails from "./components/Courses/CourseDetails";
 import AddGallery from "./Dashboard/gallery/AddGalleryImage";
+import DetailsCourse from "./Dashboard/courses/CourseDetails";
 import AddCourse from "./Dashboard/courses/AddCourse";
+import AddNews from "./Dashboard/news/AddNews";
+import NewsDetails from "./Dashboard/news/NewsDetails";
 
 function App() {
   return (
@@ -37,7 +40,10 @@ function App() {
         </Route>
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/addgallery" element={<AddGallery />} />
+        <Route path="/detailscourse" element={<DetailsCourse />} />
         <Route path="/addcourse" element={<AddCourse />} />
+        <Route path="/addnews" element={<AddNews />} />
+        <Route path="/newsdetails" element={<NewsDetails />} />
       </Routes>
     </BrowserRouter>
   );

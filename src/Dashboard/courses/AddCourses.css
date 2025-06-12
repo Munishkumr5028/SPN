@@ -1,0 +1,162 @@
+.course-box {
+ width: 100%;
+ max-width: 2200px;
+ background: #fff;
+ border-radius: 10px;
+ padding: 20px;
+}
+
+.course-header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 20px;
+}
+
+.course-title {
+  font-size: 40px;
+  color: #007bff;
+  font-weight: bold;
+  text-align: center;
+    /* flex-grow: 1; */
+  margin: 0
+}
+
+.course-add-btn {
+  background-color: #218838;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.course-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.course-table th,
+.course-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    color: black;
+}
+
+.course-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.btn-edit {
+   padding: 6px 12px;
+   font-size: 14px;
+   min-width: 70px;
+   border: none;
+   border-radius: 5px;
+   background-color: #28a745 !important;
+   color: white;
+}
+
+.button-action button {
+    cursor: pointer;
+}
+.button-action{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-delete {
+    padding: 6px 12px;
+    font-size: 14px;
+    min-width: 70px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Modal backdrop */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    z-index: 999;
+}
+
+/* Modal box */
+.modal-box {
+  background: white;
+  padding: 20px;
+  width: 600px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-box h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Input fields */
+.modal-box input[type="text"],
+.modal-box textarea,
+.modal-box input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.modal-box textarea {
+  resize: vertical;
+}
+
+/* Modal buttons */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.modal-buttons button{
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-save {
+  background-color: #28a745;
+  color: white;
+}
+.btn-save:hover {
+  background-color: #218838;
+  color: white;
+}  
+
+.btn-cancel {
+  background-color: #dc3545;
+  color: white;
+}
+.btn-cancel:hover {
+  background-color: #c82333;
+  color: white;
+}
