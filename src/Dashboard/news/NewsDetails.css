@@ -64,10 +64,6 @@
   cursor: pointer;
 }
 
-.edit-btn {
-  background-color: #007bff;
-}
-
 .delete-btn {
   background-color: #dc3545;
 }
