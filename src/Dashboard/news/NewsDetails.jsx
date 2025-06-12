@@ -3,7 +3,21 @@ import DashboardLayout from "../DashboardLayout";
 import "./NewsDetails.css";
 
 function NewsDetails() {
-  const [newsList, setNewsList] = useState([]);
+   const NewsdetailsData = [
+    {
+     heading: "dewali",
+      date: "01-06-2025",
+      Description : "this is a sample",
+      image: null,
+    },
+    {
+      heading: "dewali",
+      date: "02-06-2025",
+      Description : "this is a sample",
+      image: null,
+    },
+  ];
+  const [newsList, setNewsList] = useState(NewsdetailsData);
   const [showModal, setShowModal] = useState(false);
   const [editingIndex, setEditingIndex] = useState(null);
   const [formData, setFormData] = useState({

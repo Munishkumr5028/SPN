@@ -3,7 +3,22 @@ import "./AddNews.css";
 import DashboardLayout from "../DashboardLayout";
 
 const AddNews = () => {
-  const [newsList, setNewsList] = useState([]);
+
+  const NewsData = [
+    {
+      id: 1,
+      topic: "events",
+      date: "01-06-2025",
+      image: null,
+    },
+    {
+      id: 2,
+      topic: "dewali",
+      date: "02-06-2025",
+      image: null,
+    },
+  ];
+  const [newsList, setNewsList] = useState(NewsData);
   const [modalOpen, setModalOpen] = useState(false);
   const [formData, setFormData] = useState({
     topic: "",

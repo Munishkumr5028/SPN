@@ -118,5 +118,11 @@
   cursor: pointer;
 }
 
-.btn-save { background-color: #28a745; color: white; }
-.btn-cancel { background-color: #dc3545; color: white; }
+.btn-save { 
+    background-color: #28a745; 
+    color: white; 
+}
+.btn-cancel { 
+    background-color: #dc3545; 
+    color: white; 
+}

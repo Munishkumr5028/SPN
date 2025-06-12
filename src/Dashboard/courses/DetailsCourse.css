@@ -169,9 +169,8 @@ th {
     background-color: #279b40;
 }
 
-/* Cancel button (Danger/Secondary) */
 .modal-actions .delete-btn {
-    background-color: #dc3545;
+    background-color: #dc3545 !important;
     color: white;
 }
 
