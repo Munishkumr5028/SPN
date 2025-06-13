@@ -250,7 +250,7 @@ function Courses() {
             <div className="course-info">
               <h3>{course.name}</h3>
               <p>{course.description}</p>
-              <Link to={`/courses/detail/${course.id}`} className="read-more">
+              <Link to={`/courses/:level/${course.id}`} className="read-more">
                 Read More
               </Link>
             </div>

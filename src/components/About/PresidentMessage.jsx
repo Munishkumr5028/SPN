@@ -1,35 +1,31 @@
-import React from "react";
-import "./About.css";
+import React from 'react';
+// import './about.css';
 
-function Presidentmessage() {
+function PresidentMessage() {
   return (
-    <section className="president-section" id="president-message">
-      <div className="president-container">
-        <div className="president-image-name">
-          <div className="president-image">
-            <img
-              src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
-              alt="President"
-            />
-          </div>
-          <div className="president-signature">
-            <p className="signature-name">Dr. Jane Doe</p>
-            <p className="signature-title">President</p>
-          </div>
-        </div>
-        <div className="president-content">
-          <h2>President's Message</h2>
+    <div className="founder-wrapper">
+      <div className="founder-container">
+        <div className="founder-content">
+          <h2>Meet Our Founder</h2>
+          <h3>Rajan Makker</h3>
           <p>
-            Greetings from our institution, a beacon of learning and innovation.
-            Our vision is to empower students to lead with integrity and
-            contribute meaningfully to society. We are dedicated to fostering an
-            inclusive environment that inspires excellence and global
-            citizenship.
+            Rajan Makker, the visionary founder of our organization, has always believed in empowering
+            communities through education and innovation. His commitment and leadership continue to
+            drive our mission forward.
           </p>
+          <blockquote>
+            "Empowering minds and building futures — one step at a time."
+          </blockquote>
+        </div>
+        <div className="founder-image">
+          <img
+            src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt="Founder Rajan Makker"
+          />
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
-export default Presidentmessage;
+export default PresidentMessage;

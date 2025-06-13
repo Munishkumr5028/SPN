@@ -447,6 +447,196 @@ const courseData = [
       { semester: 2, amount: 15000 },
     ],
   },
+  {
+    id: 21,
+    title: "Diploma in Web Development",
+    description:
+      "Build modern websites using HTML, CSS, JavaScript, and React, preparing students for entry-level web development roles.",
+    objectives: [
+      "To provide a foundation in web development technologies and practices.",
+      "To teach students how to build responsive, dynamic websites using HTML, CSS, and JavaScript.",
+      "To prepare students for careers in web development and front-end development using modern tools like React.",
+    ],
+    duration: {
+      min: "1 Year",
+      max: "2 Years",
+    },
+    fees: [
+      { semester: 1, amount: 15000 },
+      { semester: 2, amount: 15000 },
+    ],
+  },
+  {
+    id: 22,
+    title: "Diploma in Web Development",
+    description:
+      "Build modern websites using HTML, CSS, JavaScript, and React, preparing students for entry-level web development roles.",
+    objectives: [
+      "To provide a foundation in web development technologies and practices.",
+      "To teach students how to build responsive, dynamic websites using HTML, CSS, and JavaScript.",
+      "To prepare students for careers in web development and front-end development using modern tools like React.",
+    ],
+    duration: {
+      min: "1 Year",
+      max: "2 Years",
+    },
+    fees: [
+      { semester: 1, amount: 15000 },
+      { semester: 2, amount: 15000 },
+    ],
+  },
+  {
+    id: 23,
+    title: "Diploma in Web Development",
+    description:
+      "Build modern websites using HTML, CSS, JavaScript, and React, preparing students for entry-level web development roles.",
+    objectives: [
+      "To provide a foundation in web development technologies and practices.",
+      "To teach students how to build responsive, dynamic websites using HTML, CSS, and JavaScript.",
+      "To prepare students for careers in web development and front-end development using modern tools like React.",
+    ],
+    duration: {
+      min: "1 Year",
+      max: "2 Years",
+    },
+    fees: [
+      { semester: 1, amount: 15000 },
+      { semester: 2, amount: 15000 },
+    ],
+  },
+  {
+    id: 24,
+    title: "Diploma in Web Development",
+    description:
+      "Build modern websites using HTML, CSS, JavaScript, and React, preparing students for entry-level web development roles.",
+    objectives: [
+      "To provide a foundation in web development technologies and practices.",
+      "To teach students how to build responsive, dynamic websites using HTML, CSS, and JavaScript.",
+      "To prepare students for careers in web development and front-end development using modern tools like React.",
+    ],
+    duration: {
+      min: "1 Year",
+      max: "2 Years",
+    },
+    fees: [
+      { semester: 1, amount: 15000 },
+      { semester: 2, amount: 15000 },
+    ],
+  },
+  {
+    id: 25,
+    title: "Diploma in Web Development",
+    description:
+      "Build modern websites using HTML, CSS, JavaScript, and React, preparing students for entry-level web development roles.",
+    objectives: [
+      "To provide a foundation in web development technologies and practices.",
+      "To teach students how to build responsive, dynamic websites using HTML, CSS, and JavaScript.",
+      "To prepare students for careers in web development and front-end development using modern tools like React.",
+    ],
+    duration: {
+      min: "1 Year",
+      max: "2 Years",
+    },
+    fees: [
+      { semester: 1, amount: 15000 },
+      { semester: 2, amount: 15000 },
+    ],
+  },
+  {
+    id: 26,
+    title: "Diploma in Web Development",
+    description:
+      "Build modern websites using HTML, CSS, JavaScript, and React, preparing students for entry-level web development roles.",
+    objectives: [
+      "To provide a foundation in web development technologies and practices.",
+      "To teach students how to build responsive, dynamic websites using HTML, CSS, and JavaScript.",
+      "To prepare students for careers in web development and front-end development using modern tools like React.",
+    ],
+    duration: {
+      min: "1 Year",
+      max: "2 Years",
+    },
+    fees: [
+      { semester: 1, amount: 15000 },
+      { semester: 2, amount: 15000 },
+    ],
+  },
+  {
+    id: 27,
+    title: "Diploma in Web Development",
+    description:
+      "Build modern websites using HTML, CSS, JavaScript, and React, preparing students for entry-level web development roles.",
+    objectives: [
+      "To provide a foundation in web development technologies and practices.",
+      "To teach students how to build responsive, dynamic websites using HTML, CSS, and JavaScript.",
+      "To prepare students for careers in web development and front-end development using modern tools like React.",
+    ],
+    duration: {
+      min: "1 Year",
+      max: "2 Years",
+    },
+    fees: [
+      { semester: 1, amount: 15000 },
+      { semester: 2, amount: 15000 },
+    ],
+  },
+  {
+    id: 28,
+    title: "Diploma in Web Development",
+    description:
+      "Build modern websites using HTML, CSS, JavaScript, and React, preparing students for entry-level web development roles.",
+    objectives: [
+      "To provide a foundation in web development technologies and practices.",
+      "To teach students how to build responsive, dynamic websites using HTML, CSS, and JavaScript.",
+      "To prepare students for careers in web development and front-end development using modern tools like React.",
+    ],
+    duration: {
+      min: "1 Year",
+      max: "2 Years",
+    },
+    fees: [
+      { semester: 1, amount: 15000 },
+      { semester: 2, amount: 15000 },
+    ],
+  },
+  {
+    id: 29,
+    title: "Diploma in Web Development",
+    description:
+      "Build modern websites using HTML, CSS, JavaScript, and React, preparing students for entry-level web development roles.",
+    objectives: [
+      "To provide a foundation in web development technologies and practices.",
+      "To teach students how to build responsive, dynamic websites using HTML, CSS, and JavaScript.",
+      "To prepare students for careers in web development and front-end development using modern tools like React.",
+    ],
+    duration: {
+      min: "1 Year",
+      max: "2 Years",
+    },
+    fees: [
+      { semester: 1, amount: 15000 },
+      { semester: 2, amount: 15000 },
+    ],
+  },
+  {
+    id: 30,
+    title: "Diploma in Web Development",
+    description:
+      "Build modern websites using HTML, CSS, JavaScript, and React, preparing students for entry-level web development roles.",
+    objectives: [
+      "To provide a foundation in web development technologies and practices.",
+      "To teach students how to build responsive, dynamic websites using HTML, CSS, and JavaScript.",
+      "To prepare students for careers in web development and front-end development using modern tools like React.",
+    ],
+    duration: {
+      min: "1 Year",
+      max: "2 Years",
+    },
+    fees: [
+      { semester: 1, amount: 15000 },
+      { semester: 2, amount: 15000 },
+    ],
+  },
 ];
 
 function CourseDetails() {

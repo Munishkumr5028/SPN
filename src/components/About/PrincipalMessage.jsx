@@ -1,36 +1,31 @@
-import React from "react";
-import "./about.css";
+import React from 'react';
+// import './about.css';
 
-function Principalmessage() {
+function PrincipalMessage() {
   return (
-    <section className="principal-section" id="principal-message">
-      <div className="principal-container">
-        <div className="principal-image-name">
-          <div className="principal-image">
-            <img
-              src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
-              alt="Principal"
-            />
-          </div>
-          <div className="principal-signature">
-            <p className="signature-name">Dr. John Smith</p>
-            <p className="signature-title">Principal</p>
-          </div>
-        </div>
-        <div className="principal-content">
-          <h2>Principal's Message</h2>
+    <div className="founder-wrapper">
+      <div className="founder-container">
+        <div className="founder-content">
+          <h2>Meet Our Principal</h2>
+          <h3>Sammer Sharma</h3>
           <p>
-            Welcome to our esteemed institution, where we strive to nurture
-            young minds with knowledge, values, and skills to excel in a dynamic
-            world. Our commitment is to provide an environment that encourages
-            intellectual growth, critical thinking, and ethical leadership.
-            Together, we aim to shape a brighter future for our students and
-            society.
+            Sammer Sharma, the visionary Principal of our organization, has always believed in empowering
+            communities through education and innovation. His commitment and leadership continue to
+            drive our mission forward.
           </p>
+          <blockquote>
+            "Empowering minds and building futures — one step at a time."
+          </blockquote>
+        </div>
+        <div className="founder-image">
+          <img
+            src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt="Founder Rajan Makker"
+          />
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
-export default Principalmessage;
+export default PrincipalMessage;

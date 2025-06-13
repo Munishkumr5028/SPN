@@ -55,7 +55,7 @@ function App() {
           <Route path="/about/principal-message" element={<PrincipalMessage />} />
           <Route path="/about/vision-mission" element={<VisionMission />} />
           <Route path="/courses/:level" element={<Courses />} />
-          <Route path="/courses/:id" element={<CourseDetails />} />
+          <Route path="/courses/:level/:id" element={<CourseDetails />} />
           <Route path="/courses/academic-calendar" element={<AcademicCalendar />} />
           <Route path="/courses/admission-process" element={<AdmissionProcess />} />
           <Route path="/courses/fee-structure" element={<FeeStructure />} />
