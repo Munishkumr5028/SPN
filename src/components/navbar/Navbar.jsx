@@ -129,13 +129,13 @@ function Navbar() {
             ["/about/president-message", "President Message"],
             ["/about/principal-message", "Principal Message"],
             ["/about/managing-committee", "Managing Committee"],
-            ["/about/contact", "Contact Us"],
+            ["/contact", "Contact Us"],
           ])}
 
           {renderDropdown("Courses", "courses", [
             ["/courses", "Undergraduate"],
-            ["/courses/postgraduate", "Postgraduate"],
-            ["/courses/diploma", "Diploma Courses"],
+            ["/courses", "Postgraduate"],
+            ["/courses", "Diploma Courses"],
             ["/courses/admission-process", "Admission Process"],
             ["/courses/fee-structure", "Fee Structure"],
             ["/courses/academic-calendar", "Academic Calendar"],
@@ -149,9 +149,9 @@ function Navbar() {
           ])}
 
           {renderDropdown("News", "news", [
-            ["/news/allotment", "Latest Allotment"],
-            ["/news/exams", "Exam Notification"],
-            ["/news/press", "Press Release"],
+            ["/news/latest-announcement", "Latest Announcement"],
+            ["/news/exam-notification", "Exam Notification"],
+            ["/news/press-release", "Press Release"],
             ["/news", "Event & Happenings"],
           ])}
 
