@@ -117,7 +117,7 @@ th {
 .modal-content {
     background: white;
     padding: 20px;
-    width: 600px;
+    max-width: 2200px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;

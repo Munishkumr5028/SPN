@@ -86,7 +86,7 @@ function DetailsCourse() {
               });
             }}
           >
-            Add
+            Add Details
           </button>
         </div>
 
@@ -99,7 +99,14 @@ function DetailsCourse() {
             </tr>
           </thead>
           <tbody>
-            {courses.map((course, index) => (
+            {courses.length === 0 ? (
+              <tr>
+                <td colSpan="3" style={{ textAlign: "center", color: "#9ca3af" }}>
+                  No Courses found
+                </td>
+              </tr>
+            ) : (
+            courses.map((course, index) => (
               <tr key={index}>
                 <td>{index + 1}</td>
                 <td>{course.name}</td>
@@ -120,7 +127,8 @@ function DetailsCourse() {
                   </div>
                 </td>
               </tr>
-            ))}
+              ))
+              )}
           </tbody>
         </table>
 

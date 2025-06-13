@@ -22,14 +22,14 @@
   margin: 0
 }
 
-.course-add-btn {
-  background-color: #218838;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
+.course-header button {
+background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .course-table {

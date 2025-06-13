@@ -52,7 +52,7 @@ const AddGallery = () => {
           </button>
         </div>
 
-        <table>
+        <table id='gallerytable'>
           <thead>
             <tr>
               <th>Event Name</th>

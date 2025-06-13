@@ -73,7 +73,7 @@ const AddNews = () => {
       <div className="news-header">
         <h2 className="news-title">Add News</h2>
         <button className="news-add-btn" onClick={() => setModalOpen(true)}>
-          Add
+          Add News
         </button>
       </div>
 
@@ -87,7 +87,14 @@ const AddNews = () => {
           </tr>
         </thead>
         <tbody>
-          {newsList.map((news, index) => (
+           {AddNews.length === 0 ? (
+              <tr>
+                <td colSpan="4" style={{ textAlign: "center", color: "#9ca3af" }}>
+                  No News found
+                </td>
+              </tr>
+            ) : (
+          newsList.map((news, index) => (
             <tr key={news.id}>
               <td>{index + 1}</td>
               <td>{news.topic}</td>
@@ -99,7 +106,7 @@ const AddNews = () => {
                 </div>
               </td>
             </tr>
-          ))}
+          )))}
         </tbody>
       </table>
 

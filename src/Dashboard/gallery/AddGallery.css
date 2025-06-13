@@ -1,151 +1,172 @@
-.addgallery {
-          max-width: 2200px;
-          width: 100%;
-          margin: 40px auto;
-          background: white;
-          border-radius: 12px;
-          box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-          padding: 25px 30px;
-        }
-        .header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          margin-bottom: 25px;
-        }
-        .header h1 {
-          font-weight: 700;
-          color: #1e3a8a;
-          font-size: 28px;
-        }
-        .btn-add {
-          background: linear-gradient(45deg,#4caf50,#2e7d32);
-          border: none;
-          padding: 12px 22px;
-          color: white;
-          font-weight: 600;
-          border-radius: 8px;
-          cursor: pointer;
-          transition: background 0.3s ease;
-        }
-        .btn-add:hover {
-          background: linear-gradient(45deg,#388e3c,#1b5e20);
-        }
-        table {
-          width: 100%;
-          border-collapse: separate;
-          border-spacing: 0 10px;
-        }
-        thead th {
-          text-align: left;
-          color: #4b5563;
-          font-weight: 600;
-          padding-bottom: 10px;
-          border-bottom: 2px solid #cbd5e1;
-        }
-        tbody tr {
-          background: #f9fafb;
-          border-radius: 10px;
-          box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-        td {
-          padding: 14px 18px;
-          vertical-align: middle;
-          color: #374151;
-          font-weight: 500;
-        }
-        .btn-delete {
-          background: #e11d48;
-          border: none;
-          padding: 8px 14px;
-          border-radius: 8px;
-          color: white;
-          cursor: pointer;
-          font-weight: 600;
-          transition: background 0.3s ease;
-        }
-        .btn-delete:hover {
-          background: #b91c1c;
-        }
+/* AddGallery.css */
 
-        /* Modal */
-        .modal-backdrop {
-          position: fixed;
-          inset: 0;
-          background: rgba(30, 58, 138, 0.5);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          z-index: 1000;
-        }
-        .modal-content {
-          background: white;
-          border-radius: 16px;
-          padding: 30px 40px;
-          width: 420px;
-          box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-          animation: slideDown 0.3s ease forwards;
-        }
-        @keyframes slideDown {
-          from {
-            opacity: 0; transform: translateY(-30px);
-          }
-          to {
-            opacity: 1; transform: translateY(0);
-          }
-        }
-        .modal-content h2 {
-          color: #1e3a8a;
-          margin-bottom: 25px;
-          text-align: center;
-          font-weight: 700;
-          font-size: 24px;
-        }
-        .modal-content input[type="text"],
-        .modal-content input[type="date"],
-        .modal-content input[type="file"] {
-          width: 100%;
-          padding: 12px 15px;
-          margin-bottom: 20px;
-          border: 1.8px solid #cbd5e1;
-          border-radius: 8px;
-          font-size: 16px;
-          transition: border-color 0.2s ease;
-        }
-        .modal-content input[type="text"]:focus,
-        .modal-content input[type="date"]:focus,
-        .modal-content input[type="file"]:focus {
-          border-color: #2563eb;
-          outline: none;
-        }
-        .modal-footer {
-          display: flex;
-          justify-content: flex-end;
-          gap: 15px;
-        }
-        .btn-save {
-          background: #2563eb;
-          border: none;
-          padding: 12px 25px;
-          color: white;
-          font-weight: 600;
-          border-radius: 8px;
-          cursor: pointer;
-          transition: background 0.3s ease;
-        }
-        .btn-save:hover {
-          background: #1e40af;
-        }
-        .btn-cancel {
-          background: #6b7280;
-          border: none;
-          padding: 12px 25px;
-          color: white;
-          font-weight: 600;
-          border-radius: 8px;
-          cursor: pointer;
-          transition: background 0.3s ease;
-        }
-        .btn-cancel:hover {
-          background: #4b5563;
-        }
+/* Layout Container */
+.addgallery {
+  width: 100%;
+ max-width: 2200px;
+ background: #fff;
+ border-radius: 10px;
+ padding: 20px;
+}
+
+/* Header section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 40px;
+    color: #007bff;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+/* Add Button (Top Right) */
+.btn-add {
+  background-color: #15803d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-add:hover {
+  background-color: #166534;
+}
+
+/* Table Styles */
+#gallerytable {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  background: white;
+}
+
+#gallerytable th, #gallerytable td {
+  padding: 14px;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+#gallerytable th {
+  background-color: #f3f4f6;
+  color: #111827;
+  font-weight: 600;
+}
+
+#gallerytable tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Edit Button */
+.btn-edit {
+  background-color: #16a34a;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-right: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-edit:hover {
+  background-color: #15803d;
+}
+
+/* Delete Button */
+.btn-delete {
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-delete:hover {
+  background-color: #b91c1c;
+}
+
+/* Modal Backdrop */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal Content Box */
+.modal-content {
+  background: white;
+  padding: 24px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+/* Input Fields */
+.modal-content input[type="text"],
+.modal-content input[type="date"],
+.modal-content input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Modal Footer Buttons */
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn-save {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-save:hover {
+  background-color: #059669;
+}
+
+.btn-cancel {
+  background-color: #6b7280;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-cancel:hover {
+  background-color: #4b5563;
+}

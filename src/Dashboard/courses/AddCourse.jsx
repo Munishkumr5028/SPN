@@ -94,7 +94,7 @@ const AddCourse = () => {
               setFormData({ name: "", description: "", image: null });
             }}
           >
-            Add
+            Add Courses
           </button>
         </div>
 
@@ -107,7 +107,14 @@ const AddCourse = () => {
             </tr>
           </thead>
           <tbody>
-            {courses.map((course, index) => (
+             {courses.length === 0 ? (
+              <tr>
+                <td colSpan="3" style={{ textAlign: "center", color: "#9ca3af" }}>
+                  No Courses found
+                </td>
+              </tr>
+            ) : (
+            courses.map((course, index) => (
               <tr key={course.id}>
                 <td>{index + 1}</td>
                 <td>{course.name}</td>
@@ -128,7 +135,8 @@ const AddCourse = () => {
                   </div>
                 </td>
               </tr>
-            ))}
+            ))
+            )}
           </tbody>
         </table>
 

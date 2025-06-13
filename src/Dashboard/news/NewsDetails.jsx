@@ -87,7 +87,7 @@ function NewsDetails() {
               setFormData({ image: null, date: "", heading: "", description: "" });
             }}
           >
-            Add
+            Add Details
           </button>
         </div>
 
@@ -101,7 +101,14 @@ function NewsDetails() {
             </tr>
           </thead>
           <tbody>
-            {newsList.map((news, index) => (
+            {newsList.length === 0 ? (
+              <tr>
+                <td colSpan="4" style={{ textAlign: "center", color: "#9ca3af" }}>
+                  No News found
+                </td>
+              </tr>
+            ) : (
+            newsList.map((news, index) => (
               <tr key={index}>
                 <td>{index + 1}</td>
                 <td>{news.heading}</td>
@@ -113,7 +120,8 @@ function NewsDetails() {
                   </div>
                 </td>
               </tr>
-            ))}
+            ))
+            )}
           </tbody>
         </table>
 
