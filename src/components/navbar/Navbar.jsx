@@ -133,9 +133,9 @@ function Navbar() {
           ])}
 
           {renderDropdown("Courses", "courses", [
-            ["/courses", "Undergraduate"],
-            ["/courses", "Postgraduate"],
-            ["/courses", "Diploma Courses"],
+            ["/courses/ug", "Undergraduate"],
+            ["/courses/pg", "Postgraduate"],
+            ["/courses/diploma", "Diploma Courses"],
             ["/courses/admission-process", "Admission Process"],
             ["/courses/fee-structure", "Fee Structure"],
             ["/courses/academic-calendar", "Academic Calendar"],

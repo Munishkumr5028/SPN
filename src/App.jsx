@@ -54,7 +54,7 @@ function App() {
           <Route path="/about/president-message" element={<PresidentMessage />} />
           <Route path="/about/principal-message" element={<PrincipalMessage />} />
           <Route path="/about/vision-mission" element={<VisionMission />} />
-          <Route path="/courses" element={<Courses />} />
+          <Route path="/courses/:level" element={<Courses />} />
           <Route path="/courses/:id" element={<CourseDetails />} />
           <Route path="/courses/academic-calendar" element={<AcademicCalendar />} />
           <Route path="/courses/admission-process" element={<AdmissionProcess />} />
