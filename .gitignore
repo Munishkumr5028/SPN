@@ -1,32 +1,17 @@
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
+# Node modules
+_client/node_modules/
+_server/node_modules/
 
-# Compiled binary addons
-build/Release
-build
+# Logs
+*.log
 
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
+# OS files
 .DS_Store
-#.env*
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Env files
+.env
+_client/.env
+_server/.env
+
+# Vite/Build
+_client/dist/
