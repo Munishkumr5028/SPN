@@ -42,6 +42,8 @@ import DetailsCourse from "./Dashboard/courses/CourseDetails";
 import AddCourse from "./Dashboard/courses/AddCourse";
 import AddNews from "./Dashboard/news/AddNews";
 import NewsDetails from "./Dashboard/news/NewsDetails";
+import AddAlumini from "./Dashboard/alumni/AddAlumni";
+import AluminiSuccess from "./Dashboard/alumni/AlumniSuccess";
 
 function App() {
   return (
@@ -89,6 +91,8 @@ function App() {
         <Route path="/addcourse" element={<AddCourse />} />
         <Route path="/addnews" element={<AddNews />} />
         <Route path="/newsdetails" element={<NewsDetails />} />
+        <Route path="/addalumini" element={<AddAlumini />} />
+        <Route path="/aluminisuccess" element={<AluminiSuccess />} />
       </Routes>
     </BrowserRouter>
   );

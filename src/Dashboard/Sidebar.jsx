@@ -93,8 +93,17 @@ function Sidebar() {
         </li>
         {openSection === "Alumini" && (
           <ul className="submenu">
-            <li>Add Alumini</li>
-            <li>Delete Alumini</li>
+            <li>
+              <Link to="/addalumini">
+              Add Alumini</Link>
+            </li>
+            <li>
+              <Link to="/aluminisuccess">
+              Alumini Success</Link>
+            </li>
+            <li>Alumini Events</li>
+            <li>Alumini Register</li>
+            <li>Alumini Donation</li>
           </ul>
         )}
         <li>
