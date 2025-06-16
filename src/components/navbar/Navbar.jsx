@@ -18,6 +18,7 @@ function Navbar() {
   const [lastScrollTop, setLastScrollTop] = useState(0);
   const [showMenu, setShowMenu] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   const location = useLocation();
   const pathname = location.pathname;
@@ -54,8 +55,29 @@ function Navbar() {
     };
   }, [showMenu]);
 
+  // Update isMobile on window resize
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const toggleDropdown = (key) => {
     setOpenDropdown((prev) => (prev === key ? null : key));
+  };
+
+  const handleMouseEnter = (key) => {
+    if (!isMobile) {
+      setOpenDropdown(key);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (!isMobile) {
+      setOpenDropdown(null);
+    }
   };
 
   const toggleMenu = () => {
@@ -69,8 +91,15 @@ function Navbar() {
   };
 
   const renderDropdown = (label, key, links) => (
-    <div className={`dropdown ${openDropdown === key ? "active" : ""}`}>
-      <span className="dropdown-label" onClick={() => toggleDropdown(key)}>
+    <div
+      className={`dropdown ${openDropdown === key ? "active" : ""}`}
+      onMouseEnter={() => handleMouseEnter(key)}
+      onMouseLeave={handleMouseLeave}
+    >
+      <span
+        className="dropdown-label"
+        onClick={() => isMobile && toggleDropdown(key)}
+      >
         {label}
         <FaChevronDown
           className={`dropdown-arrow ${openDropdown === key ? "rotate" : ""}`}

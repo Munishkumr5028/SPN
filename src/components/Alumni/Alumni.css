@@ -244,3 +244,440 @@
   margin-top: 10px;
   color: #444;
 }
+/* Alumni Registration Section Styles */
+.alumni-section {
+  width: 100%;
+  min-height: 70vh;
+  padding: 5% 5%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; /* Space for Footer */
+}
+
+.alumni-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.alumni-card {
+  background-color: #f8f9fa;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.alumni-card h2 {
+  font-size: 2.5rem;
+  color: #2e2e2e;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: #555;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  color: #1f2937;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #10b981;
+  box-shadow: 0 0 5px rgba(16, 185, 129, 0.3);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input[type="file"] {
+  padding: 0.4rem;
+}
+
+.image-preview {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.image-preview img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #10b981;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+}
+
+.clear-form {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #4b5563;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.clear-form:hover {
+  color: #10b981;
+}
+
+/* Responsive Design for Alumni Registration Section */
+@media (max-width: 768px) {
+  .alumni-card {
+    padding: 2rem;
+    max-width: 90%;
+  }
+
+  .alumni-card h2 {
+    font-size: 2rem;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .submit-button {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .clear-form {
+    font-size: 0.85rem;
+  }
+
+  .image-preview img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .alumni-section {
+    margin-bottom: 450px; /* Adjusted for mobile Footer */
+  }
+}
+/* Alumni Events Section Styles */
+.events-section {
+  width: 100%;
+  min-height: 70vh;
+  padding: 5% 5%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; /* Space for Footer */
+}
+
+.events-container {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+.events-container h2 {
+  font-size: 2.5rem;
+  color: #2e2e2e;
+  margin-bottom: 2rem;
+}
+
+.events-group {
+  margin-bottom: 3rem;
+}
+
+.events-group h3 {
+  font-size: 2rem;
+  color: #2e2e2e;
+  margin-bottom: 1.5rem;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.event-card {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  border-left: 4px solid #10b981;
+}
+
+.event-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-content {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.event-content h4 {
+  font-size: 1.4rem;
+  color: #1f2937;
+  margin-bottom: 0.8rem;
+}
+
+.event-date,
+.event-location {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+}
+
+.event-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.event-button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #10b981;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.event-button:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design for Alumni Events Section */
+@media (max-width: 900px) {
+  .events-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .events-container h2 {
+    font-size: 2rem;
+  }
+
+  .events-group h3 {
+    font-size: 1.8rem;
+  }
+
+  .event-card {
+    padding: 1.2rem;
+  }
+
+  .event-content h4 {
+    font-size: 1.2rem;
+  }
+
+  .event-date,
+  .event-location,
+  .event-description {
+    font-size: 0.9rem;
+  }
+
+  .event-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .event-image img {
+    height: 150px;
+  }
+
+  .events-section {
+    margin-bottom: 450px; /* Adjusted for mobile Footer */
+  }
+}
+/* Success Stories Section Styles */
+.stories-section {
+  width: 100%;
+  min-height: 70vh;
+  padding: 5% 5%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; /* Space for Footer */
+}
+
+.stories-container {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+.stories-container h2 {
+  font-size: 2.5rem;
+  color: #2e2e2e;
+  margin-bottom: 2rem;
+}
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.story-card {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  border-left: 4px solid #10b981;
+}
+
+.story-image {
+  margin-bottom: 1rem;
+}
+
+.story-image img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.story-content {
+  text-align: left;
+}
+
+.story-content h4 {
+  font-size: 1.4rem;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.story-designation {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 0.8rem;
+}
+
+.story-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.story-link {
+  font-size: 0.9rem;
+  color: #4b5563;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.story-link:hover {
+  color: #10b981;
+}
+
+/* Responsive Design for Success Stories Section */
+@media (max-width: 900px) {
+  .stories-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .stories-container h2 {
+    font-size: 2rem;
+  }
+
+  .story-card {
+    padding: 1.2rem;
+  }
+
+  .story-content h4 {
+    font-size: 1.2rem;
+  }
+
+  .story-designation,
+  .story-text {
+    font-size: 0.9rem;
+  }
+
+  .story-link {
+    font-size: 0.85rem;
+  }
+
+  .story-image img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .stories-section {
+    margin-bottom: 450px; /* Adjusted for mobile Footer */
+  }
+}
