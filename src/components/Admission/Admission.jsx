@@ -59,7 +59,7 @@ function Admission() {
   return (
     <>
     <div className="container">
-    <div className="login-container">
+    <div className="admission-login">
       <h2>Student Register</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
