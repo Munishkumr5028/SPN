@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-     "start": "vite preview --port $PORT"
+     "start": "PORT=${PORT} vite preview"
   },
   "dependencies": {
     "react": "^19.0.0",
