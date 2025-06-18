@@ -3,11 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-     "start": "PORT=${PORT} vite preview"
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "start": "vite preview --host --port $PORT"
+}
+
   },
   "dependencies": {
     "react": "^19.0.0",
