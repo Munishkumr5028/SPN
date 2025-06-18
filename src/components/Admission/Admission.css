@@ -7,6 +7,10 @@
   margin: 20px 10px;
   width: 80%;
   background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 30px 40px;
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
