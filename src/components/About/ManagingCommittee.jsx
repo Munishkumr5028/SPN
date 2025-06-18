@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./About.css";
+import "./about.css";
 
 function Managingcommittee() {
   const members = [

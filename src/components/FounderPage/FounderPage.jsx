@@ -1,5 +1,5 @@
 import React from 'react';
-import './FounderPage.css';
+import './founderPage.css';
 
 function FounderPage() {
   return (
