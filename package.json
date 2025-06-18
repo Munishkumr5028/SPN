@@ -3,13 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-"scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "lint": "eslint .",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
     "start": "vite preview --host --port $PORT"
-}
-
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -27,5 +25,8 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
     "vite": "^6.2.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }
