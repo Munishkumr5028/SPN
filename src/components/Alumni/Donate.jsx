@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './alumni.css';
+import './Alumni.css';
 
 function Donate() {
   const [form, setForm] = useState({

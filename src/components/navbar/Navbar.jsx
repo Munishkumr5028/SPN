@@ -11,7 +11,7 @@ import {
   FaChevronDown,
 } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
-import "./navbar.css";
+import "./Navbar.css";
 
 function Navbar() {
   const [showMini, setShowMini] = useState(true);

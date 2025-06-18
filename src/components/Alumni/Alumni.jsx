@@ -1,5 +1,5 @@
 import React from "react";
-import "./alumni.css";
+import "./Alumni.css";
 
 const toppers = [
   {

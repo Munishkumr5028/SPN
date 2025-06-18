@@ -1,5 +1,5 @@
 import React from 'react';
-import './gallery.css';
+import './Gallery.css';
 
 const galleryImages = Array.from({ length: 60 }, (_, i) => `https://picsum.photos/300/200?random=${i + 1}`);
 

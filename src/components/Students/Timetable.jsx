@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./students.css";
+import "./Students.css";
 
 function Timetable() {
   const [semester, setSemester] = useState("Even");

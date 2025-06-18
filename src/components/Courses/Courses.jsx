@@ -1,5 +1,5 @@
 import React from "react";
-import "./courses.css";
+import "./Courses.css";
 import { Link, useParams } from "react-router-dom";
 
 // Test data: one sample course from each level

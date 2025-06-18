@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom"; // Import useParams
-import "./courseDetails.css";
+import "./CourseDetails.css";
 
 const courseData = [
   {

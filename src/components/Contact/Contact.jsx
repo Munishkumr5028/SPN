@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./contact.css";
+import "./Contact.css";
 
 function Contact() {
   // Initialize state for form fields

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./students.css";
+import "./Students.css";
 
 function Attendance() {
   const [department, setDepartment] = useState("Computer Science");

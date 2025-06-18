@@ -1,5 +1,5 @@
 import React from "react";
-import "./students.css";
+import "./Students.css";
 
 function AcademicResources() {
   const resources = [
