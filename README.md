@@ -1,12 +1,42 @@
-# React + Vite
+# 🎓 College Website – React (Vite) Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **college website UI** built using **React** and **Vite**.  
+This is a static, frontend-only project showcasing the layout and design of a college portal. It also includes a starter **dashboard setup**, which will later evolve into a full-stack MERN application.
 
-Currently, two official plugins are available:
+> ✅ **Live Site**: [https://spn-production.up.railway.app](https://spn-production.up.railway.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Project Highlights
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ Built with **React** using **Vite** for fast builds
+- 📄 Responsive layout and clean structure
+- 📁 Includes a **dashboard UI base**
+- 🚀 Deployed on **Railway**
+- 🧱 Ready to be extended into a full MERN stack project
+
+---
+
+## 🛠 Tech Stack
+
+| Tech      | Role                    |
+|-----------|-------------------------|
+| React     | Frontend library        |
+| Vite      | Build tool              |
+| Railway   | Hosting/Deployment      |
+| HTML/CSS  | Page styling (vanilla)  |
+| JavaScript | Logic & interactions  |
+
+---
+
+# 3. Install dependencies
+npm install
+
+# 4. Start development server
+npm run dev
+
+
+🙋‍♂️ About Me
+Manish Kumar
+Frontend & MERN Stack Developer
+
