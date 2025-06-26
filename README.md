@@ -55,7 +55,7 @@ npm run dev
 | 💼 Availability     | Open to full-time roles (onsite or remote) |
 | 🤝 Freelance Work   | Yes – open to short-term or long-term freelance projects |
 | 🧑‍💻 Remote Projects | Yes – comfortable with async and collaborative remote teams |
-| 📧 Email            | [munishkumr5028@gmail.com](mailto:munishkumr5028@gmail.com) |
+| 📧 Email            | [munishkumr786@gmail.com](mailto:munishkumr786@gmail.com) |
 | 🔗 LinkedIn         | [linkedin.com/in/munish5028](https://www.linkedin.com/in/munish5028) |
 
 ---
