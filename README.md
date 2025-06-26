@@ -35,8 +35,29 @@ npm install
 # 4. Start development server
 npm run dev
 
+---
 
-🙋‍♂️ About Me
-Manish Kumar
-Frontend & MERN Stack Developer
+## 🙋‍♂️ About Me
+
+| 🔹 Field     | 🔸 Details |
+|-------------|------------|
+| **Name**     | Munish Kumar |
+| **Role**     | 💻 Frontend & MERN Stack Developer |
+| **Location** | 📍 Mohali / Chandigarh, Punjab, India |
+| **About**    | 🌐 Passionate about building real-world, scalable web applications using modern JavaScript technologies like **React**, **Node.js**, **Express**, and **MongoDB**. Always focused on clean code, performance, and real-world user needs. |
+
+---
+
+## 📬 Contact Me
+
+| 🔹 Field            | 🔸 Details |
+|---------------------|------------|
+| 💼 Availability     | Open to full-time roles (onsite or remote) |
+| 🤝 Freelance Work   | Yes – open to short-term or long-term freelance projects |
+| 🧑‍💻 Remote Projects | Yes – comfortable with async and collaborative remote teams |
+| 📧 Email            | [munishkumr5028@gmail.com](mailto:munishkumr5028@gmail.com) |
+| 🔗 LinkedIn         | [linkedin.com/in/munish5028](https://www.linkedin.com/in/munish5028) |
+
+---
+
 
