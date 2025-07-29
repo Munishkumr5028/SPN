@@ -3,7 +3,7 @@
 A modern **college website UI** built using **React** and **Vite**.  
 This is a static, frontend-only project showcasing the layout and design of a college portal. It also includes a starter **dashboard setup**, which will later evolve into a full-stack MERN application.
 
-> ✅ **Live Site**: [https://spn-production.up.railway.app](https://spn-production.up.railway.app)
+> ✅ **Live Site**: [spn-production.app](https://spn-college.vercel.app/)
 
 ---
 
