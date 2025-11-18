@@ -50,7 +50,7 @@ function Footer() {
       href="https://munish-portfolio-gamma.vercel.app/" 
       target="_blank" 
       rel="noopener noreferrer" 
-      style={{ marginLeft: 5, fontWeight: "bold", color: "#fff", textDecoration: "underline" }}
+      style={{ marginLeft: 5, fontWeight: "bold", color: "#22c55e",   textDecoration: "none", textDecoration: "underline" }}
     >
       CodeX Solutions
     </a>
@@ -62,4 +62,5 @@ function Footer() {
 }
 
 export default Footer;
+
 
