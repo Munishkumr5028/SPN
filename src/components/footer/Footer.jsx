@@ -43,10 +43,23 @@ function Footer() {
       <div className="footer-bottom">
        
         <span>© {new Date().getFullYear()} ABC Institute. All rights reserved. </span>
-        <span>Made with ❤️ by <strong>Learn_CodeX</strong></span>
+        {/* <span>Made with ❤️ by <strong>Learn_CodeX</strong></span> */}
+        <span>
+    Made with ❤️ by 
+    <a 
+      href="https://munish-portfolio-gamma.vercel.app/" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      style={{ marginLeft: 5, fontWeight: "bold", color: "#fff", textDecoration: "underline" }}
+    >
+      CodeX Solutions
+    </a>
+    — Build Smart. Build Scalable.
+  </span>
       </div>
     </footer>
   );
 }
 
 export default Footer;
+
